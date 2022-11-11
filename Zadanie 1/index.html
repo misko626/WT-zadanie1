@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main_style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        class="menu-icon"
+        src="./assets/icons8-menu.svg"
+        alt="Menu obrázok"
+        title="menu"
+        onclick="onClickMenu()"
+      />
+      <div id="navContainer" class="nav-container">
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> DOMOV</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"> Pages</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-search" href="#">
+                <img src="./assets/search-icon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content-container">
+        <div class="header-heading">
+          <h1>Rob WEB a pomôž zlepšiť SVET.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, corporis quasi voluptatum neque autem quas.
+          </p>
+          <a href="#content" class="read-more" title="Zobraz viac">Čítaj viac</a>
+        </div>
+        <div class="header-image">
+          <img
+            src="/assets/header_image/header_image.jpg"
+            alt="Úvodný obrázok"
+          />
+        </div>
+      </div>
+    </header>
+
+    <hr class="line" />
+
+    <section id="content" class="section-content">
+      <!-- <div class="bcc-square"></div> -->
+      <div class="section-container">
+        <div class="section-image">
+          <img
+            src="/assets/content_image/content_image.jpg"
+            alt="Http obrázok"
+          />
+        </div>
+        <div class="section-paragraph">
+          <h2>Poznať pozadie je ZÁKLAD</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus officia, rem eaque perferendis architecto accusantium
+            fugiat atque quaerat, tenetur ad tempora illo dolorum maxime vero
+            sequi cumque voluptatum doloribus sed?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="framework-section">
+      <h2>Work SMART not HARD</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
+        alias!
+      </p>
+      <div class="framework-container">
+        <a href="https://angular.io/" title="Angular page">
+          <img src="/assets/angular_logo.png" alt="Angular logo" />
+        </a>
+        <a href="https://reactjs.org/" title="React page">
+          <img src="/assets/react_logo.png" alt="React logo" />
+        </a>
+        <a href="https://vuejs.org/" title="Vue page">
+          <img src="/assets/vue_logo.png" alt="Vue logo" />
+        </a>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <hr class="footer-line" />
+      <h3>
+        © Webové technológie
+        <span
+          ><a
+            href="http://kemt.fei.tuke.sk/"
+            title="Prepojenie na stranku katedry KEMT"
+            >KEMT</a
+          ></span
+        >
+        2022
+      </h3>
+    </footer>
+
+    <script src="/main_script.js"></script>
+  </body>
+</html>
