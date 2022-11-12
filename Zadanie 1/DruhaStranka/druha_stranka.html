@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../nav_style.css" />
+    <link rel="stylesheet" href="druha_stranka.css" />
+    <title>DruhaStranka</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        class="menu-icon"
+        src="../assets/icons8-menu.svg"
+        alt="Menu obrázok"
+        title="menu"
+        onclick="onClickMenu()"
+      />
+      <div id="navContainer" class="nav-container">
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"> DOMOV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/DruhaStranka/druha_stranka.html">
+                Druhá stránka
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Bootstrap Stránka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-search" href="#">
+                <img src="../assets/search-icon.svg" alt="Obrazok lupy"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content-container">
+        <h1 class="header-heading">
+          Pomôžme hendikepovaným používať WEB bez obmedzení
+        </h1>
+
+        <img
+          src="../assets/second_page_header/second_header_image.jpg"
+          alt="Obrazok nevidiaceho cloveka"
+        />
+      </div>
+    </header>
+
+    <hr class="line" />
+
+    <section class="sekcia-zmena">
+      <h2 title="Sekcia zmena nadpis">Sekcia zmena</h2>
+      <div class="blure-image-zoom"></div>
+      <img
+        src="../assets/icons8-close_white.svg"
+        alt="zatvor obrazok"
+        class="close-image-zoom"
+        onclick="closeImage()"
+      />
+      <div class="image-container">
+        <img
+          class="sekcia-zmena-image"
+          src="../assets/sekcia_zmena_image.svg"
+          alt="Obrazok v sekcii zmena"
+        />
+        <button class="zoom-image" onclick="zoomImage()" title="Zoom obrazok">
+          Priblíž obrázok
+        </button>
+      </div>
+      <div class="zmeny-container"></div>
+    </section>
+
+    <footer class="main-footer">
+      <hr class="footer-line" />
+      <h3>
+        © Webové technológie
+        <span
+          ><a
+            href="http://kemt.fei.tuke.sk/"
+            title="Prepojenie na stranku katedry KEMT"
+            >KEMT</a
+          ></span
+        >
+        2022
+      </h3>
+    </footer>
+
+    <script src="./druha_stranka.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "nunito-medium";
+  src: url("/assets/Nunito_Sans/NunitoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "nunito-semibold";
+  src: url("/assets/Nunito_Sans/NunitoSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "nunito-bold";
+  src: url("/assets/Nunito_Sans/NunitoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nunito-extra-bold";
+  src: url("/assets/Nunito_Sans/NunitoSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "nunito-black";
+  src: url("/assets/Nunito_Sans/NunitoSans-Black.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nunito-semibold;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --mobile-breakpoint: 550px;
+  --tablet-breakpoint: 850px;
+  --desktop-breakpoint: 1250px;
+  --large-breakpoint: 1400px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  min-width: 350px;
+}
+
+.main-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
