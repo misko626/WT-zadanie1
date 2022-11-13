@@ -101,11 +101,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 150px;
+  width: 90%;
+  margin: auto;
+  /* border: 3px solid red; */
+  text-align: center;
 }
 
-.sekcia-zmena h2 {
+.sekcia-zmena-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sekcia-zmena-heading {
   position: absolute;
   top: 30px;
   font-family: nunito-extra-bold;
@@ -117,6 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* border: 2px solid black; */
 }
 
 .image-container img {
@@ -169,6 +181,79 @@ body {
   border-radius: 50%;
 }
 
+.zmeny-container {
+  min-width: 350px;
+  margin-top: 50px;
+  width: 50vw;
+  padding-left: 20px;
+}
+
+.zmeny-container h2 {
+  margin-bottom: 30px;
+  font-family: nunito-bold;
+  font-size: 2rem;
+}
+
+.points {
+  text-align: left;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.points ul {
+  list-style-type: none;
+}
+
+.zmeny-buttons {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.zoom-zmeny {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(61, 46, 128);
+  background: linear-gradient(
+    164deg,
+    rgba(61, 46, 128, 1) 39%,
+    rgba(164, 33, 113, 1) 100%
+  );
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.zoom-zmeny:hover {
+  transform: scale(1.1);
+}
+
+.zoom-hover {
+  height: 40px;
+  border: 2px solid purple;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  padding: 0 20px 0 20px;
+}
+
+.zoom-hover span {
+  font-size: 18px;
+}
+.zoom-hover:hover {
+  transform: scale(1.1);
+  background-color: rgba(100, 22, 189, 0.676);
+}
+
 /*
  * FOOTER
  */
@@ -199,6 +284,18 @@ body {
   .content-container h1 {
     width: 90%;
     font-size: 2rem;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .sekcia-zmena {
+    width: 99vw;
+  }
+
+  .sekcia-zmena-heading {
+    width: 90%;
+    font-size: 2rem;
+    margin: auto;
   }
 
   .content-container img {

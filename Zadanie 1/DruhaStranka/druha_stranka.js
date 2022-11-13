@@ -82,3 +82,27 @@ function zoomImage() {
   blure.classList.add("blure-opened");
   closeImageZoom.classList.add("close-image-zoom-display");
 }
+
+/*
+ * ZOOM image Function
+ */
+
+const zmenyZoomBtn = document.querySelector(".zoom-zmeny");
+const zmenyZoznam = document.querySelector(".points");
+const zmenyZoomHover = document.querySelector(".zoom-hover");
+let isZommed = false;
+
+zmenyZoomBtn.addEventListener("click", priblizZmeny);
+zmenyZoomHover.addEventListener("mouseover", priblizZmeny);
+
+function priblizZmeny() {
+  if (!isZommed) {
+    isZommed = true;
+    zmenyZoomBtn.innerHTML = "Zmenši zmeny";
+    zmenyZoznam.style.fontSize = "30px";
+  } else {
+    zmenyZoomBtn.innerHTML = "Priblíž zmeny";
+    isZommed = false;
+    zmenyZoznam.style.fontSize = "18px";
+  }
+}

@@ -21,15 +21,27 @@
         <nav class="nav-bar">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html"> DOMOV</a>
+              <a
+                class="nav-link"
+                href="../index.html"
+                title="Predoch na domovskú stránku"
+              >
+                DOMOV</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/DruhaStranka/druha_stranka.html">
+              <a class="nav-link" href="#" title="Táto stránka">
                 Druhá stránka
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Bootstrap Stránka</a>
+              <a
+                class="nav-link"
+                href="../BootstrapStranka/bootstrap_stranka.html"
+                title="Prechod na tretiu stránku"
+              >
+                Bootstrap Stránka</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link-search" href="#">
@@ -55,7 +67,9 @@
     <hr class="line" />
 
     <section class="sekcia-zmena">
-      <h2 title="Sekcia zmena nadpis">Sekcia zmena</h2>
+      <h2 class="sekcia-zmena-heading" title="Sekcia zmena nadpis">
+        Sekcia zmena
+      </h2>
       <div class="blure-image-zoom"></div>
       <img
         src="../assets/icons8-close_white.svg"
@@ -63,17 +77,54 @@
         class="close-image-zoom"
         onclick="closeImage()"
       />
-      <div class="image-container">
-        <img
-          class="sekcia-zmena-image"
-          src="../assets/sekcia_zmena_image.svg"
-          alt="Obrazok v sekcii zmena"
-        />
-        <button class="zoom-image" onclick="zoomImage()" title="Zoom obrazok">
-          Priblíž obrázok
-        </button>
+      <div class="sekcia-zmena-container">
+        <div class="image-container">
+          <img
+            class="sekcia-zmena-image"
+            src="../assets/sekcia_zmena_image.svg"
+            alt="Obrazok v sekcii zmena"
+          />
+          <button class="zoom-image" onclick="zoomImage()" title="Zoom obrazok">
+            Priblíž obrázok
+          </button>
+        </div>
+        <div class="zmeny-container">
+          <h2>Vykonané zmeny</h2>
+          <div class="points">
+            <ul>
+              <li>
+                <img src="../assets/check.svg" alt=" check" />
+                Zvolenie dizajnu, ktorý je prehľadný a neobsahuje zbytočne veľa
+                textu.
+              </li>
+              <li>
+                <img src="../assets/check.svg" alt=" check" />
+                Implementovanie rezponzivity pre všetky druhy zariadení.
+              </li>
+              <li>
+                <img src="../assets/check.svg" alt=" check" />
+                Použitie technológií ako sú flexbox, bootstrap ...
+              </li>
+              <li>
+                <img src="../assets/check.svg" alt=" check" />
+                Zvolenie kontrasti farieb písma a pozadia, aby tá kombinácia
+                nepredstavovala problém pre hendikepovaných.
+              </li>
+              <li>
+                <img src="../assets/check.svg" alt=" check" />
+                Štrukturovanie a tvorenie kódu, ktorý obsahuje tie správne
+                atribúty pre uľahčenie prístupu.
+              </li>
+            </ul>
+          </div>
+          <div class="zmeny-buttons">
+            <button class="zoom-zmeny" title="Pribliz zmeny tlacidlo">
+              Pribliz zmeny
+            </button>
+            <div class="zoom-hover">+ <span>Prejdi cezomňa a priblíž text</span></div>
+          </div>
+        </div>
       </div>
-      <div class="zmeny-container"></div>
     </section>
 
     <footer class="main-footer">
