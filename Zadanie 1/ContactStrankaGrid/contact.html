@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../nav_style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Kontakt Grid</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        class="menu-icon"
+        src="../assets/icons8-menu.svg"
+        alt="Menu obrázok"
+        title="menu"
+        onclick="onClickMenu()"
+      />
+      <div id="navContainer" class="nav-container">
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" title="Domovska stranka">
+                DOMOV</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../DruhaStranka/druha_stranka.html"
+                title="Prechod na druhú stránku"
+              >
+                Druhá stránka
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../BootstrapStranka/bootstrap_stranka.html"
+                title="Prechod na tretiu stránku"
+              >
+                Bootstrap Stránka</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Tato stranka">
+                Kontakt (GRID)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-search" href="">
+                <img src="../assets/search-icon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content-container">
+        <div class="header-heading">
+          <p>Máte nejaké otázky?</p>
+          <h1>Kontaktujte NÁS.</h1>
+        </div>
+        <div class="header-image">
+          <img
+            src="../assets/contact_image/contact_image.jpg"
+            alt="Úvodný obrázok"
+          />
+        </div>
+      </div>
+    </header>
+    <hr class="line" />
+
+    <section class="contact">
+      <h2>Kontaktný formulár</h2>
+      <div class="contact-container">
+        <form>
+          <div class="wrapper">
+            <div class="box">
+              <label for="fname">Meno:</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                required
+                placeholder="Krstné meno"
+              />
+            </div>
+            <div class="box">
+              <label for="lname">Priezvisko:</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                required
+                placeholder="Priezvisko"
+              />
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="box">
+              <label for="email">Email:</label>
+              <input
+                class="inputclass"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Emailová adresa"
+              />
+            </div>
+            <div class="box">
+              <label for="tel">Tel:</label>
+              <input
+                type="tel"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                id="tel"
+                required
+                placeholder="telefónne číslo"
+              />
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="box">
+              <label for="message">Správa:</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Tvoja správa ..."
+              ></textarea>
+            </div>
+          </div>
+          <input class="submit-btn" type="submit" name="" value="Odošli" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <hr class="footer-line" />
+      <h3>
+        © Webové technológie
+        <span
+          ><a
+            href="http://kemt.fei.tuke.sk/"
+            title="Prepojenie na stranku katedry KEMT"
+            >KEMT</a
+          ></span
+        >
+        2022
+      </h3>
+      <a class="imagesCreator" href="http://www.freepik.com"
+        >Obrázky vytvorené grafikom <span>vectorjuice / Freepik</span></a
+      >
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
