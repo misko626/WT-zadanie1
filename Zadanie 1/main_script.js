@@ -49,11 +49,23 @@ window.addEventListener("scroll", appearElement);
 function appearElement() {
   //screen sroll value
   const screenPosition = (window.innerHeight / 2) * 1.3;
-  const servicesLogo = document.querySelector(".services-logo");
+  const sectionImage = document.querySelector(".section-image");
+  const sectionParagraph = document.querySelector(".section-paragraph");
+  const frameworkContainer = document.querySelector(".framework-container");
+  // console.log(sectionImage);
 
-  const logoPosition = servicesLogo.getBoundingClientRect().top;
+  const sectionImagePosition = sectionImage.getBoundingClientRect().top;
+  const sectionParagraphPosition = sectionParagraph.getBoundingClientRect().top;
+  const frameworkContainerPosition =
+    frameworkContainer.getBoundingClientRect().top;
 
-  if (logoPosition < screenPosition) {
-    servicesLogo.classList.add("appear-logo");
+  if (sectionImagePosition < screenPosition) {
+    sectionImage.classList.add("section-image-appear");
+  }
+  if (sectionParagraphPosition < screenPosition) {
+    sectionParagraph.classList.add("section-parahraph-appear");
+  }
+  if (frameworkContainerPosition < screenPosition + 200) {
+    frameworkContainer.classList.add("framework-container-appear");
   }
 }

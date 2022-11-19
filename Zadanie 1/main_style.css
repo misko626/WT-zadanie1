@@ -84,6 +84,13 @@ body {
   height: 50%;
 }
 
+.header-heading h1,
+p {
+  animation: shake-heading 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
 .header-heading h1 {
   font-family: nunito-extra-bold;
   font-size: 3em;
@@ -109,11 +116,16 @@ body {
   padding: 10px 10px 10px 10px;
   border-radius: 35px;
   transition: all 0.5s ease;
+  animation: pop-in 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  opacity: 1;
 }
 
 .header-image img {
   width: 50vw;
   min-width: 450px;
+  transform: translateX(100px);
+  opacity: 0;
+  animation: welcome-heading-img 1s forwards 0.5s;
 }
 
 .line {
@@ -156,8 +168,23 @@ body {
   min-width: 450px;
 }
 
+.section-image {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 0.5s linear;
+}
+.section-image-appear {
+  opacity: 1;
+  transform: translateX(0);
+}
 .section-paragraph {
   width: 30vw;
+  opacity: 0;
+  transition: 1s linear;
+}
+
+.section-parahraph-appear {
+  opacity: 1;
 }
 
 .section-paragraph h2 {
@@ -202,6 +229,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  opacity: 0;
+  transition: 1s linear;
+}
+
+.framework-container-appear {
+  opacity: 1;
 }
 
 .framework-section h2 {
@@ -359,5 +392,51 @@ body {
 
   .framework-section {
     padding-top: 0;
+  }
+}
+
+/*
+ * ANIMATIONS keyframes
+ */
+
+@keyframes welcome-heading-img {
+  to {
+    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake-heading {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    max-width: 30px;
+  }
+  100% {
+    opacity: 1;
+    max-width: none;
   }
 }

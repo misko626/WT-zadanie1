@@ -208,6 +208,24 @@ body {
   list-style-type: none;
 }
 
+.points h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: nunito-bold;
+}
+
+.points ol {
+  margin-left: 30px;
+}
+
+.points ol li {
+  line-height: 30px;
+}
+
+.points ol li span {
+  font-family: nunito-bold;
+}
+
 .zmeny-buttons {
   display: flex;
   /* border: 2px solid red; */
